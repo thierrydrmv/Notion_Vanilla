@@ -2,8 +2,6 @@ const content = document.getElementById('content')
 const modal = document.getElementById('modal')
 const divs = document.getElementsByTagName('div')
 function input() {
-  const modalN = document.getElementById('modalN')
-  console.log(modalN.value)
   var tags = Array.from(divs)
   for (let index = 0; index < tags.length; index++) {
     if (getData(index)) {
@@ -54,16 +52,11 @@ function openModal(index) {
 function keyCode(event) {
   if (event.key != 'Enter') {
     removeModal()
-  } else if (event.key == 'Escape') {
-    modalOff()
   }
 }
 function removeModal() {
   const modal = document.getElementById('modal')
   modal.remove()
 }
-function modalOff() {
-  const modalN = document.getElementById('modalN')
-  modalN.document.value = true
-}
+
 content.addEventListener('keyup', input)
