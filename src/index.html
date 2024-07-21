@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notion</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="top">
+        <img src="https://super.so/icon/dark/chevrons-right.svg" alt="" />
+        <img src="https://super.so/icon/dark/book-open.svg" alt="" />
+        <p>Main / Getting started / Project...</p>
+      </div>
+      <div class="control">
+        <img src="https://super.so/icon/dark/unlock.svg" alt="unlock" />
+        <p>Editing</p>
+        <p>|</p>
+        <p>Publish Space</p>
+        <img src="https://super.so/icon/dark/chevron-down.svg" alt="" />
+      </div>
+    </div>
+    <div class="header">
+      <div class="top user space">
+        <div class="top">
+          <img src="https://super.so/icon/dark/user.svg" alt="" />
+          <p>|</p>
+          <img src="https://super.so/icon/dark/clock.svg" alt="" />
+          <p>0 min</p>
+          <p>|</p>
+          <img
+            class="pernaLonga"
+            src="https://fps.cdnpk.net/home/cover/image-14-sm.webp?w=438&h=438"
+            alt=""
+          />
+          <img src="https://super.so/icon/dark/arrow-down-left.svg" alt="" />
+          <p>0</p>
+        </div>
+        <div class="top">
+          <img src="https://super.so/icon/dark/check-circle.svg" alt="" />
+          <img src="https://super.so/icon/dark/cloud.svg" alt="" />
+          <img src="https://super.so/icon/dark/more-vertical.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <main class="container">
+      <div
+        id="content"
+        data-text="Type / for blocks, @ to link docs or people"
+        contenteditable="true"
+        onChange="input()"
+      ></div>
+    </main>
+    <input id="modalN" value="false" />
+    <script src="/src//script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  text-align: center;
+  width: auto;
+  font-size: large;
+  color: black;
+  padding: 1rem;
+}
+
+button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.space {
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.user {
+  border: solid 1px lightgrey;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+p {
+  cursor: pointer;
+}
+
+.pernaLonga {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  align-self: center;
+}
+
+img {
+  cursor: pointer;
+  width: 20px;
+}
+
+.top {
+  display: flex;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: medium;
+}
+
+.control {
+  display: flex;
+  gap: 1rem;
+}
+
+.container {
+  height: 800px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding-top: 3rem;
+  border: none;
+}
+
+.popup {
+  font-size: 12px;
+  width: 200px;
+  background-color: white;
+  border: solid rgb(226, 219, 219) 1px;
+  text-align: left;
+  border-radius: 2%;
+  position: inherit;
+  vertical-align: top;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+}
+
+.block {
+  display: block;
+  margin-left: 5px;
+}
+
+.margin {
+  margin: 0px;
+}
+
+#content {
+  margin-top: 4rem;
+  width: 700px;
+  height: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 4rem;
+  border: none;
+  text-align: left;
+}
+
+[contentEditable='true']:empty:not(:focus):before {
+  content: attr(data-text);
+}
