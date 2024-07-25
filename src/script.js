@@ -13,7 +13,6 @@ function open(event) {
     console.log(line)
   }
   if (event.key == 'Enter') {
-    line = line.slice(0, -5)
     newElement(line)
   }
 }
@@ -26,9 +25,8 @@ function newElement(line) {
   }
   var createItem = line.split('Enter')
   data.push({ id: (id += 1), tag: 'p', text: createItem[id - 1] })
-  line = ''
-  // data = data[data.length - 1]
   console.log(data)
+  // data = data[data.length - 1]
 }
 // function input() {
 //   var tags = Array.from(divs)
